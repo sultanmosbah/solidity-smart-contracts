@@ -1,20 +1,3 @@
-
-pragma solidity ^0.4.0;
-contract second {
-    address owner;
-   modifier isowner(){
-       if(msg.sender!=owner){throw;
-       _;
-       }
-   }
-       function second(){
-           owner=msg.sender;
-       }
-       function kill() isowner(){
-           delete owner;
-           selfdestruct(msg.sender);
-       }
-   }
 pragma solidity ^0.4.0;
 contract VoteAssemblee {
     uint public votingTimeInMinutes;
