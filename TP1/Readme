@@ -1,1 +1,23 @@
+Y-a-t-il un organisateur désigné ?
+Le président d'une assemblée
 
+Qui seront les votants ?
+Les membres de l'assemblée
+
+Quelles seront les propositions ?
+Pour ou contre l'arrêt de la commercialisation d ela cigarette, proposition yes, no ou abstention
+
+Qui peut ajouter une proposition ?
+Seul le président (owner) le peut
+
+Combien de temps durera le vote ?
+Le président (owner) détermine la durée du vote
+
+Comment seront calculés les résultats ?
+Par comptage du nombre de oui, si la majorité l'emporte il y a valdation
+
+Peut-on faire des délégations ? Comment ?
+Non
+
+Quelles informations a-t-on sur les votants ? Comment s'assure-t-on que chacun ne vote que le nombre de fois autorisé ? 
+Chaque votant a un ID, on s'assure qu'ils ne votent qu'une seule fois grâce au mapping
