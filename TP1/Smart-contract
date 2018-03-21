@@ -108,12 +108,15 @@ contract VoteAssemblee {
            proposals[index].adopted = true; 
         }
     }
-    function kill ()public {
-    delete votingTimeInMinutes;
-    delete owner;
-    delete members;
-    delete proposals;
-    selfdestruct(msg.sender);
+    modifier isowner()
+    {
+        require(msg.sender == owner);
+        _;
     }
+    function kill() isowner() public
+    {
+        if(msg.sender==owner) selfdestruct(owner);
+    }
+    
  
 }
