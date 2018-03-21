@@ -108,5 +108,12 @@ contract VoteAssemblee {
            proposals[index].adopted = true; 
         }
     }
+    function kill ()public {
+    delete votingTimeInMinutes;
+    delete owner;
+    delete members;
+    delete proposals;
+    selfdestruct(msg.sender);
+    }
  
 }
